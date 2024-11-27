@@ -129,20 +129,20 @@ while True:
                 print("Predicted Character 2: ", key)
                 print('Confidence 2: ', 100 * value)
 
-        # Convert the output text to speech
-        tts = gTTS(text=output_text, lang="en")
+        # # Convert the output text to speech
+        # tts = gTTS(text=output_text, lang="en")
 
-        # Save the speech to a temporary file
-        tts.save("output.mp3")
+        # # Save the speech to a temporary file
+        # tts.save("output.mp3")
 
-        # Play the speech using the default media player
-        os.system("afplay output.mp3")
+        # # Play the speech using the default media player
+        # os.system("afplay output.mp3")
 
-        # Pause execution for 5 seconds
-        time.sleep(5)
+        # # Pause execution for 5 seconds
+        # time.sleep(5)
 
-        # Delete the temporary file
-        os.remove("output.mp3")
+        # # Delete the temporary file
+        # os.remove("output.mp3")
 
     # Convert the frame to RGB format for Mediapipe processing
     framergb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
